@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <script src="/Script/script.js" defer></script>
+  <script src="/Script/products.js" defer></script>
+
+  <link rel="stylesheet" href="Styles/style.css">
+  <style>
+    .cartPage {
+      font-family: Arial, sans-serif;
+      background: #d9d9d9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .cart-container {
+      margin: 5vh 0 5vh 0;
+      background: white;
+      width: 50vw;
+      min-width: 50vw;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart-header {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .cart-item img {
+      width: 100px;
+      height: 100px;
+
+    }
+    .item-title {
+      font-weight: bold;
+      width: 400px;
+    }
+
+    .item-price {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+    }
+
+    .quantity button {
+      border: none;
+      background: #ddd;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .quantity span {
+      margin: 0 10px;
+      font-size: 16px;
+    }
+
+    .cart-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 25px;
+    }
+
+    .checkout-btn {
+      background: #4a90e2;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .remove {
+      color: red;
+      font-size: 12px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div class="cartPage">
+    <div class="cart-container">
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+
+</html>

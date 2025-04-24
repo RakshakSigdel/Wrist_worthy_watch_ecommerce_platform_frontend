@@ -1,0 +1,411 @@
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #197149;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* PRODUCT CARD DESIGN */
+.productCard {
+  width: 20vw;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  background-color: rgb(239, 239, 239);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.productCard:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.productCardImage {
+  margin-bottom: 1vh;
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  transition: all 1s ease;
+}
+
+.productCardImage:hover {
+  scale: 1.1;
+}
+
+.productCardContent {
+  padding: 10px;
+}
+
+.productCardTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.productPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.productNewPrice {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.productOldPrice {
+  color: #888888;
+}
+
+.productCardDescription {
+  color: #197149;
+  font-size: 0.9rem;
+  height: 4rem;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #197149;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learnMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #197149;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart:hover {
+  transform: scale(1.05);
+}
+
+.learnMore:hover {
+  transform: scale(1.05);
+}
+
+.cart-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.cart-text {
+  font-size: 0.9rem;
+}
+
+/* PRODUCT CARD DESIGN ENDS   */
+/* MODAL DESIGN */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30vw;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  position: absolute;
+  right: 23px;
+  top: 15px;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgba(255, 0, 0, 0.82);
+  transition: color 0.3s;
+}
+
+.close:hover {
+  color: rgb(255, 0, 0);
+}
+
+#modalImage {
+  width: 25vw;
+  height: 60vh;
+  /* height: auto; */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+h2,
+h3,
+p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.modalPrice {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#modalNewPrice {
+  font-weight: bold;
+  color: green;
+  font-size: 20px;
+}
+
+#modalOldPrice {
+  color: red;
+  margin-left: 10px;
+}
+
+/* MODAL DESIGN ENDS  */
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInRotate {
+  from {
+    opacity: 0;
+    transform: rotate(-15deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes scrollPop {
+  from {
+    display: none;
+    transform: scale(0.1);
+  }
+
+  to {
+    display: block;
+    transform: scale(1);
+  }
+}
+
+.scrollPop {
+  animation: pop 1s linear 1;
+  animation-timeline: view();
+  animation-range: entry 0% cover 100%;
+}
+
+.pop {
+  animation: pop 1s linear 1;
+}
+
+.fadeIn {
+  animation: fadeIn 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+
+.fadeInLeft {
+  animation: fadeInLeft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.fadeInRight {
+  animation: fadeInRight linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.fadeInUp {
+  animation: fadeInUp linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.fadeInDown {
+  animation: fadeInDown linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.fadeInZoom {
+  animation: fadeInZoom linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+.fadeInRotate {
+  animation: fadeInRotate linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+
+
+
+@keyframes categoryFadeInLeft {
+  from {
+    opacity: 0.8;
+    transform: translateX(-200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(200px);
+  }
+}
+
+
+@keyframes categoryFadeInRight {
+  from {
+    opacity: 0.8;
+    transform: translateX(200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-200px);
+  }
+}
+
+.categoryFadeInLeft {
+  animation: categoryFadeInLeft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 100%;
+}
+
+.categoryFadeInRight {
+  animation: categoryFadeInRight linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 100%;
+}

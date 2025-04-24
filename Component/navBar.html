@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .navBar {
+      display: flex;
+      height: 10vh;
+      background-color: #1d1d1d;
+      color: white;
+      justify-content: space-around;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 99;
+    }
+
+    .logo {
+      display: flex;
+      color: #197149;
+      align-items: center;
+    }
+
+    .navLinks {
+      display: flex;
+      list-style: none;
+    }
+
+    .navLinks a {
+      text-decoration: none;
+      color: #ffffff;
+      transition: all 0.3s ease;
+    }
+
+    .navLinks a.active {
+      color: #197149 !important;
+      font-weight: bold;
+    }
+
+
+
+    .navLinks a:hover {
+      color: #197149;
+    }
+
+    .navLinks li {
+      margin: 25px;
+      font-size: 20px;
+    }
+
+    .navMenu {
+      display: flex;
+      /* margin-right: 10vw; */
+    }
+
+    .navCart:hover {
+      color: #197149;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navBar" id="header">
+    <!-- NAVBAR LOGO -->
+    <a href="/index.html">
+      <div class="logo">
+        <img src="/images/others/bgRemovedLogo.png" alt="" height="70" />
+        <h1>Wrist Worthy</h1>
+      </div>
+    </a>
+    <!-- NAVBAR LIST ITEMS -->
+    <div>
+      <ul class="navLinks">
+        <li class="navHome"><a href="../index.html">Home</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../product.html">Products</a></li>
+        <li><a href="../research.html">Research</a></li>
+        <li><a href="../aboutUs.html">About Us</a></li>
+      </ul>
+    </div>
+    <!-- NAVBAR MENUS -->
+    <div class="navMenu">
+      <div class="navCart" style="margin-left: 10px;">
+        <a href="/cart.html">
+          <svg width="34" height="34" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-width="2"
+              d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+</body>
+
+</html>

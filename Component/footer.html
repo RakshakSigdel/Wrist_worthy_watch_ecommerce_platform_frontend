@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .footer {
+            background: #1d1d1d;
+            color: white;
+            padding: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin: 20px 0;
+        }
+
+        .footer-section h2 {
+            color: #197149;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #197149;
+            padding-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            color: #d1d1d1;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin: 10px 0;
+            cursor: pointer;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+
+        .footer-section ul li:hover {
+            color: #197149;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icons svg {
+            width: 35px;
+            height: 35px;
+            color: #197149;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .social-icons svg:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #333;
+            margin-top: 20px;
+            color: #ffffff !important;
+        }
+
+        .footer-bottom p {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>ABOUT US</h2>
+                <p><b>"WRIST WORTHY"</b> specializes in selling watches from different brands at the best market prices
+                    all over Nepal.</p>
+            </div>
+            <div class="footer-section">
+                <h2>PAGES</h2>
+                <ul>
+                    <a href="../index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="../blog.html">
+                        <li>Blog</li>
+                    </a>
+                    <a href="../product.html">
+                        <li>Products</li>
+                    </a>
+                    <a href="../research.html">
+                        <li>Research</li>
+                    </a>
+                    <a href="../aboutUs.html">
+                        <li>About Us</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Trending</h2>
+                <ul>
+                    <a href="../Blogs/blog2.html">
+                        <li>Positive Impacts</li>
+                    </a>
+                    <a href="../Blogs/blog3.html">
+                        <li>Negative Impacts</li>
+                    </a>
+                    <a href="../Blogs/blog4.html">
+                        <li>watch Sales</li>
+                    </a>
+                    <a href="../Blogs/blog5.html">
+                        <li>Watch Industry</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>CONTACT</h2>
+                <ul>
+                    <li>itahari,sunsari</li>
+                    <li>contact@wristwatch.com</li>
+                    <li>+977 9800000000</li>
+                </ul>
+                <div class="social-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2 v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12.037 21.998a10.313 10.313 0 0 1-7.168-3.049 9.888 9.888 0 0 1-2.868-7.118 9.947 9.947 0 0 1 3.064-6.949A10.37 10.37 0 0 1 12.212 2h.176a9.935 9.935 0 0 1 6.614 2.564L16.457 6.88a6.187 6.187 0 0 0-4.131-1.566 6.9 6.9 0 0 0-4.794 1.913 6.618 6.618 0 0 0-2.045 4.657 6.608 6.608 0 0 0 1.882 4.723 6.891 6.891 0 0 0 4.725 2.07h.143c1.41.072 2.8-.354 3.917-1.2a5.77 5.77 0 0 0 2.172-3.41l.043-.117H12.22v-3.41h9.678c.075.617.109 1.238.1 1.859-.099 5.741-4.017 9.6-9.746 9.6l-.215-.002Z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="color: white;">&copy; 2025 Wrist worthy. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

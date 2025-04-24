@@ -1,0 +1,116 @@
+ html{
+    scroll-behavior: smooth;
+ }
+ body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.researchPage h1,
+.researchPage h2,
+.researchPage h3 {
+    font-family: 'Georgia', serif;
+    color: #197149;
+    margin-bottom: 0.5em;
+}
+
+.researchPage section {
+    margin: 2em auto;
+    padding: 1.5em 3em;
+    max-width: 80%;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.researchPage ul {
+    list-style-type: disc;
+    margin-left: 2em;
+}
+
+.researchPage p,
+li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    font-size: 0.95rem;
+}
+
+th,
+td {
+    padding: 0.8em 1em;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #197149;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+/* Screenshot Gallery */
+/* Card Layout */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin-top: 1.5em;
+}
+
+.card {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.card h3 {
+    margin: 0.5em 0;
+    color: #3498db;
+    font-size: 1.1em;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Headings */
+.researchPage h2 {
+    border-bottom: 2px solid #197149;
+    padding-bottom: 0.3em;
+    margin-bottom: 1em;
+}
+
+/* Article Styles */
+article {
+    margin-top: 2em;
+}
+
+article h3 {
+    color: #197149;
+}

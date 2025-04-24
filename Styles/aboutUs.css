@@ -1,0 +1,283 @@
+/* STYLE FOR THE WHOLE PAGE */
+body {
+    background-color: #d9d9d9;
+    overflow-x: hidden;
+    /* margin: 0; */
+}
+
+/* STYLE FOR WHO WE ARE SECTION */
+.companyInformation {
+    background-image: url(/images/bannerImages/whoWeArebg.jpg);
+    height: 70vh;
+    background-position: center;
+}
+
+.companyInformationText {
+    padding: 20px;
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.WhoAreWeText {
+    margin-left: 10vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #197149;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.whoAreWeDescription {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #555555;
+    text-align: justify;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-left: 4px solid #197149;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* STYLE FOR WHO WE ARE SECTION ENDS */
+
+/* STYLE FOR MISSION AND VISION STARTS */
+.missionAndVisionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.missionAndVisionContent {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.missionAndVisionsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 45%;
+}
+
+.missionAndVisionTitle {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.missionAndVisionSubtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.missionAndVisionImageContainer {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.missionAndVisionImageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* STYLE FOR MISSION AND VISION ENDS */
+
+/* STYLE FOR TEAM MEMBERS BEGINS HERE */
+.ourteamContainer {
+    margin-top: 10vh;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.teamMemberDecorBox {
+    position: absolute;
+    top: 30vh;
+    height: 30vh;
+    width: 4vw;
+    background-color: #197149;
+}
+
+.teamMemberDecorBox.left {
+    left: 0;
+}
+
+.teamMemberDecorBox.right {
+    right: 0;
+}
+
+.ourteamContainer h1 {
+    font-size: 3rem;
+    color: #333;
+    z-index: 1;
+    position: relative;
+}
+
+.team {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.teamMembers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    justify-items: center;
+}
+
+.teamMember {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* width: 100%; */
+    /* max-width: 300px; */
+    height: 30vh;
+    width: 30vw;
+}
+
+.teamMember img {
+    border-radius: 50%;
+    width: 25vh;
+    height: 25vh;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.teamMember h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.teamMember .role {
+    font-size: 1rem;
+    color: #197149;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.teamMember p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0 0 15px;
+}
+
+.teamMember .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.teamMember .social-links a {
+    font-size: 1.2rem;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.teamMember .social-links a:hover {
+    color: #d90429;
+}
+/* STYLE FOR TEAM MEMBERS ENDS HERE */
+
+
+/* STYLE FOR FEEDBACK FORM STARTS HERE */
+.feedBackForm {
+    width: 50vw;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.feedBackForm h1.divFeedback {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.feedBackForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedBackForm label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.feedBackForm input[type="text"],
+.feedBackForm input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    font-size: 14px;
+}
+
+.feedBackForm input[type="text"]:focus,
+.feedBackForm input[type="email"]:focus {
+    border-color: #197149;
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 255, 128, 0.5);
+}
+
+.feedBackForm input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #197149;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedBackForm input[type="submit"]:hover {
+    background-color: #26a26a;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* STYLE FOR FEEDBACK FORM ENDS HERE */
